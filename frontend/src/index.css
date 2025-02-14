@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+i.card:hover{
+    display: block;
+}
+
+::selection{
+    background-color:  oklch(0.811 0.111 293.571);
+}
