@@ -51,7 +51,7 @@ const studentRegistration=async(req,res)=>{
             return res.json({success:false,message:"Email is not valid"});
         }
 
-        if(mobile.length<10&&mobile.length>=11){
+        if(mobile.length<10 || mobile.length>=11){
             return res.json({success:false,message:"Mobile number is not valid"});
         }
 
