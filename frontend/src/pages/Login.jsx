@@ -23,7 +23,7 @@ const Login = () => {
       if (currentState==='Sign Up') {
         
         const response=await axios.post(backendUrl+'/api/student/register',{name,email,password,mobile,city,country});
-        console.log(response);
+        
         if (response.data.success) {
           setToken(response.data.token);
           localStorage.setItem('token',response.data.token);

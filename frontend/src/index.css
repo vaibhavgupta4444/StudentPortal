@@ -7,3 +7,13 @@ i.card:hover{
 ::selection{
     background-color:  oklch(0.811 0.111 293.571);
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
